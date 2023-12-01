@@ -130,9 +130,19 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 - The full command line (or lines) you ran to trigger the bug
 
-bash run.sh
+`bash run.sh`
 
-bash test.sh
+`bash test.sh`
+
+```
+javac -g BankAcc.java Main.java
+jdb Main
+stop at BankAcc:10
+run
+print amount
+print balance
+```
+
 
 
 - A description of what to edit to fix the bug
