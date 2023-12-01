@@ -21,7 +21,7 @@ I think the bug might be related to how the balance is calculated after the depo
    ## TA Response:
    Hi Mark,
 
-   It loo
+   It looks like there is an issue with the balance update logic. Could you run the program with a debugger and add some print statements to trace the flow, especially around the balance calculation after a deposit? This might help us to identify the bug faster.
 
 
 3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
