@@ -45,6 +45,7 @@ I think the bug might be related to how the balance is calculated after the depo
 - The contents of each file before fixing the bug
   
   BankAcc.java
+  
   ```
   public class BankAcc {
     private double balance;
@@ -61,10 +62,11 @@ I think the bug might be related to how the balance is calculated after the depo
     public double getBalance() {
         return balance;
     }
-}
-```
+  }
+  ```
 
   Main.java
+  
   ```
   public class Main {
     public static void main(String[] args) {
@@ -74,11 +76,12 @@ I think the bug might be related to how the balance is calculated after the depo
         account.deposit(50.0);
         System.out.println("Post-deposit Balance: " + account.getBalance());
     }
-}
-```
+  }
+  ```
 
 BankAccTest.java
-```
+
+ ```
 import static org.junit.Assert.*;
 import org.junit.*;
 
@@ -104,10 +107,11 @@ public void setUp(){
     account.deposit(amount);
     assertEquals(200.0, account.getBalance(), 0.01);
 	}
-}
-```
+  }
+  ```
 
 run.sh
+
 ```
 set -e
 javac BankAcc.java Main.java
@@ -115,6 +119,7 @@ java Main
 ```
 
 test.sh
+
 ```
 set -e
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
