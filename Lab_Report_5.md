@@ -136,6 +136,32 @@ bash test.sh
 
 - A description of what to edit to fix the bug
 
+The bug is in the `BankAcc.java` in the `deposit` method, The balance is not being updated correctly after a deposit. To resolve this issue, I need to modifying the deposit method to correctly add the deposit amount to the existing balance. I add this line of code `balance += amount;` in the `deposit` method which adds the deposit amount to the current balance.
+
+Here is my new code for the `BankAcc.java` class
+
+```
+public class BankAcc {
+    private double balance;
+
+    public BankAcc(double initialBalance) {
+        this.balance = initialBalance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+        System.out.println("Depositing: " + amount);
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+```
+
+and here is the screenshot that the bug fixed:
+
+![Image](fixed.png)
 
 
 ## Part 2 - Reflection
