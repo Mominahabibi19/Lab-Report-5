@@ -18,33 +18,39 @@ I think the bug might be related to how the balance is calculated after the depo
 
 
 2. A response from a TA asking a leading question or suggesting a command to try
-   ## TA Response:
-   Hi Mark,
+## TA Response:
+Hi Mark,
 
-   It looks like there is an issue with the balance update logic. Could you run the program with a debugger and add some print statements to trace the flow, especially around the balance calculation after a deposit? This might help us to identify the bug faster.
+It looks like there is an issue with the balance update logic. Could you run the program with a debugger and add some print statements to trace the flow, especially around the balance calculation after a deposit? This might help us to identify the bug faster.
 
 
 3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
 
+## Here is the screenshot/terminal output:
+
 ![Image](debug.png)
+
+## A clear description of what the bug is:
 
 Thanks for the suggestion! after running the debugger and setting the breakpoint, I discovered that the balance in my BankAcc class does not update after a deposit. I used `jdb` to set a breakpoint at line 10. then I stepped through the code to observe the changes in the balance variable and used print commands to check the variable values which helped me to pinpoint whether the issue was within the deposit method or elsewhere. 
 
 4. At the end, all the information needed about the setup including:
    
-- The file & directory structure needed
+## - The file & directory structure needed
   
-  BankAcc.java is a class for bank account
+  BankAcc.java is a Java class file for bank accounts and it contains methods for various banking operations.
   
-  Main.java is a main class to run the application
+  Main.java is a main Java class file to run the application.
   
-  BankAccTest.java is a class for test different input...
+  BankAccTest.java is a Java class contains unit tests for the `BankAcc` class. It used to test different methods of the `BankAcc` class with various inputs to ensure they behave as expected. 
   
-  run.sh is a bash script to compile and run the java program
+  lib directory contains the Hamcrest and Junit libraries for running JUnit tests  
   
-  test.sh is a bash script to...
+  run.sh is a bash script to compile and run the main Java program.
   
-- The contents of each file before fixing the bug
+  test.sh is a bash script which I used for running my unit tests.
+  
+## - The contents of each file before fixing the bug
   
   BankAcc.java
   
@@ -128,7 +134,7 @@ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore BankAccTest
 ```
 
-- The full command line (or lines) you ran to trigger the bug
+## - The full command line (or lines) you ran to trigger the bug
 
 `bash run.sh`
 
@@ -145,7 +151,7 @@ print balance
 
 
 
-- A description of what to edit to fix the bug
+## - A description of what to edit to fix the bug
 
 The bug is in the `BankAcc.java` in the `deposit` method, The balance is not being updated correctly after a deposit. To resolve this issue, I need to modifying the deposit method to correctly add the deposit amount to the existing balance. I add this line of code `balance += amount;` in the `deposit` method which adds the deposit amount to the current balance.
 
