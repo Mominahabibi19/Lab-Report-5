@@ -26,9 +26,11 @@ I think the bug might be related to how the balance is calculated after the depo
 
 3. Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
 
+![Image](debug.png)
 
+Thanks for the suggestion! after running the debugger and setting the breakpoint, I discovered that the balance in my BankAcc class does not update after a deposit. I used `jdb` to set a breakpoint at line 10. then I stepped through the code to observe the changes in the balance variable and used print commands to check the variable values which helped me to pinpoint whether the issue was within the deposit method or elsewhere. 
 
-5. At the end, all the information needed about the setup including:
+4. At the end, all the information needed about the setup including:
    
 - The file & directory structure needed
   
