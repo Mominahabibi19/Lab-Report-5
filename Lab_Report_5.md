@@ -11,6 +11,9 @@ I am working on a simple banking application in Java, The application is suppose
 
 ![Image](syp.png)
 
+I think the bug might be related to how the balance is calculated after the deposit, but I am not sure. The failure seems to occur with any deposit amount.
+
+![Image](fail.png)
 
 2. A response from a TA asking a leading question or suggesting a command to try
 
