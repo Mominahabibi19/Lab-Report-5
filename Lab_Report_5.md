@@ -2,6 +2,7 @@
 *By Momina Habibi*
 
 ## Part1 - Debugging Scenario
+
 1. The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is.
 
 
@@ -22,11 +23,7 @@
 
 ## Part 2 - Reflection
 
-During the second half of this quarter, I learned about Vim text editor which I did not know before. One especail cool feature of Vim that I discorverd is its extensive use of keyboard 
-shortcuts for almost every text editing task. I think this feature makes Vim incredibly efficient for coding and text editing once you get use to it. Also, it allow for quick navigation 
-and editing in large files without relying on a mouse. As an example, I can move the cursor around quickly without a mouse, jump to specific words or characters with ease, and delete or 
-copy entire lines very easily. Another interesting feature of Vim is the ability to record and play macros which means you can record a series of commands to perform a task and then replay
-those commands with a single keystroke. It can save a lot of time, especially with more complex and repetitive tasks.  
+During the second half of this quarter, I learned about Vim text editor which I did not know before. One especially cool feature of Vim that I discovered is its extensive use of keyboard shortcuts for almost every text editing task. I think this feature makes Vim incredibly efficient for coding and text editing once you get used to it. Also, it allows for quick navigation and editing in large files without relying on a mouse. As an example, I can move the cursor around quickly without a mouse, jump to specific words or characters with ease, and delete or copy entire lines very easily. Another interesting feature of Vim is the ability to record and play macros which means you can record a series of commands to perform a task and then replay those commands with a single keystroke. It can save a lot of time, especially with more complex and repetitive tasks.  
 
 
 
