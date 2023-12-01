@@ -29,14 +29,21 @@ I think the bug might be related to how the balance is calculated after the depo
 
 
 5. At the end, all the information needed about the setup including:
+   
 - The file & directory structure needed
+  
   BankAcc.java is a class for bank account
+  
   Main.java is a main class to run the application
+  
   BankAccTest.java is a class for test different input...
+  
   run.sh is a bash script to compile and run the java program
+  
   test.sh is a bash script to...
   
 - The contents of each file before fixing the bug
+  
   BankAcc.java
   ```
   public class BankAcc {
@@ -56,6 +63,7 @@ I think the bug might be related to how the balance is calculated after the depo
     }
 }
 ```
+
   Main.java
   ```
   public class Main {
@@ -68,6 +76,7 @@ I think the bug might be related to how the balance is calculated after the depo
     }
 }
 ```
+
 BankAccTest.java
 ```
 import static org.junit.Assert.*;
@@ -97,12 +106,14 @@ public void setUp(){
 	}
 }
 ```
+
 run.sh
 ```
 set -e
 javac BankAcc.java Main.java
 java Main
 ```
+
 test.sh
 ```
 set -e
@@ -111,6 +122,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 ```
 
 - The full command line (or lines) you ran to trigger the bug
+
 bash run.sh
 
 bash test.sh
