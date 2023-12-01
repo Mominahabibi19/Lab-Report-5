@@ -134,6 +134,7 @@ bash run.sh
 
 bash test.sh
 
+
 - A description of what to edit to fix the bug
 
 The bug is in the `BankAcc.java` in the `deposit` method, The balance is not being updated correctly after a deposit. To resolve this issue, I need to modifying the deposit method to correctly add the deposit amount to the existing balance. I add this line of code `balance += amount;` in the `deposit` method which adds the deposit amount to the current balance.
