@@ -7,6 +7,7 @@
 
 ## Original Student Post on EdStem:
 Hi everyone,
+
 I am working on a simple banking application in Java, The application is supposed to update the balance after a deposit, but it is not working. Here is a screenshot of the output after running my bash script which compiles and runs the Java program.
 
 ![Image](syp.png)
